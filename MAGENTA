@@ -1,4 +1,3 @@
-
 int SMA_pin = 9;
 unsigned long previousMillis = 0;
 
@@ -14,9 +13,6 @@ void loop() {
   analogWrite(SMA_pin, 255); 
   delay(400);              //change this for controlling duty cycle of 'on'
   
-  Serial.print(currentMillis);
-  Serial.print("\n");
-  
   analogWrite(SMA_pin, 0);
   delay(10000);             //change this for controlling duty cycle of 'off'
- }
+}
